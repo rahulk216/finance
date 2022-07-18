@@ -9,9 +9,7 @@
 html {
 	scroll-behavior: smooth;
 }
-body {
-	/* font-family: var(--main-font); */
-}
+
 a {
 	text-decoration: none;
 	display: inline-block;
