@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color:#1d2951;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	/* font-family: var(--main-font); */
+}
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+p {
+	line-height: 1.5;
+	font-weight: 500;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+
+
+#particles-js{
+    height:400px;
+    background-image: linear-gradient( 99.9deg, rgba(27,24,31,1) 21.2%, rgba(50,4,89,1) 84.8% );
+}
