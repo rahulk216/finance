@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
+
+
 *{
     margin:0;
     padding:0;
@@ -5,10 +9,14 @@
 }
 :root {
     --main-color:#1d2951;
+	--main-font: 'Open Sans', sans-serif;
+	--section-width: 85%;
+	--color-white: #fff;
 }
 html {
 	scroll-behavior: smooth;
-	font-size: 16px;
+	font-size: 14px;
+	font-family: var(--main-font);
 }
 
 a {
@@ -26,6 +34,36 @@ img {
 
 
 #particles-js{
-    height:400px;
+	position: relative;
+    height:70vh;
     background-image: linear-gradient( 99.9deg, rgba(27,24,31,1) 21.2%, rgba(50,4,89,1) 84.8% );
+}
+
+.landing-screen{
+	position: absolute;
+	left:6%;
+	color: var(--color-white);
+	width: var(--section-width);
+	padding-top:8rem;
+}
+
+.landing-screen h1{
+	margin-bottom:1rem;
+	font-size:2.5rem;
+}
+
+.landing-screen button{
+	margin-top:1rem;
+	padding:0.5rem 1rem;
+	cursor:pointer;
+	border:none;
+	border-radius: 10px;
+	text-transform: uppercase;
+	background-color: rgb(232, 78, 78) ;
+	color:var(--color-white);
+}
+
+.wave{
+	position: absolute;
+	top:83%;
 }
