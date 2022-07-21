@@ -68,6 +68,7 @@ img {
 	text-transform: uppercase;
 	background-color:var(--color-blue-4) ;
 	color:var(--color-blue-1);
+	font-weight: 800;
 }
 
 .wave{
@@ -95,7 +96,7 @@ footer{
 	grid-gap:2rem;
 }
 .footer-grid-item{
-	grid-column: span 4;
+	grid-column:span 4
 }
 
 .footer-grid-item h3{
@@ -120,5 +121,47 @@ footer{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0.6rem 0;
+}
+.socials span{
+	font-size:1.6rem;
+	padding:0.6rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+	.footer-grid-item{
+		grid-column:span 1
+	}
+	.wave{
+		top:79%;
+	}
+	.landing-screen{
+		width:50%;
+		padding-top:18rem;
+	}
+	.landing-screen h1{
+		font-size:4rem;
+	}
+	.landing-screen button{
+		margin-top: 2rem;
+		padding:1rem 1rem;
+		
+	}
+}
+
+
+@media only screen and (min-width: 1024px) {
+	.landing-screen{
+		width:50%;
+		padding-top:10rem;
+	}
+	.wave{
+		top:42%;
+	}
+	.landing-screen p{
+		width:60%;
+	}
+	.footer-container{
+		padding: 4rem 0; ;
+	}
 }
