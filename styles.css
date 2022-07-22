@@ -151,12 +151,18 @@ footer{
 
 
 @media only screen and (min-width: 1024px) {
+	li, p{
+		line-height:1.8rem;
+	}
+	#particles-js{
+		height:80vh;
+	}
 	.landing-screen{
 		width:50%;
 		padding-top:10rem;
 	}
 	.wave{
-		top:42%;
+		top:40%;
 	}
 	.landing-screen p{
 		width:60%;
