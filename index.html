@@ -7,7 +7,12 @@
 		<title>Fin System</title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+		/>
 		<link rel="stylesheet" href="styles.css" />
+
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -22,7 +27,9 @@
 			<div class="landing-screen">
 				<h1>FIN SYSTEM</h1>
 				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci deserunt doloribus animi labore soluta dignissimos, rem optio doloremque sed similique.
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+					Adipisci deserunt doloribus animi labore soluta dignissimos, rem
+					optio doloremque sed similique.
 				</p>
 				<button>Contact us</button>
 			</div>
@@ -38,7 +45,144 @@
 				></path>
 			</svg>
 		</div>
-		<section id="main"></section>
+		<section id="main">
+			<div class="contact-container">
+				<div class="contact-grid">
+					<div class="contact-grid-item1">
+						<div
+							id="contact-slider"
+							class="splide"
+							aria-label="Splide Basic HTML Example"
+						>
+							<div class="splide__track">
+								<ul class="splide__list slider-text">
+									<li class="splide__slide contact-slide-grid">
+										<div class="title">
+											<h2>Creating Wealth for Bharath</h2>
+											<p>
+												Lorem ipsum dolor sit amet consectetur
+												adipisicing elit. Est quos esse, sed ipsam
+												magni deserunt quas rerum aspernatur illo
+												optio?
+											</p>
+										</div>
+										<div class="lottie">
+											<lottie-player
+												src="https://assets5.lottiefiles.com/packages/lf20_gxtah1wp.json"
+												background="transparent"
+												speed="1"
+												style="width: 300px; height: 300px"
+												loop
+												autoplay
+											></lottie-player>
+										</div>
+									</li>
+									<li class="splide__slide contact-slide-grid">
+										<div class="title ">
+											<h2>Creating Wealth for Bharath</h2>
+											<p>
+												Lorem ipsum dolor sit amet consectetur
+												adipisicing elit. Ut blanditiis molestiae
+												corrupti assumenda facilis doloremque
+												tenetur laborum? Placeat, nesciunt ipsam.
+											</p>
+										</div>
+										<div class="lottie">
+											<lottie-player
+												src="https://assets5.lottiefiles.com/packages/lf20_s5h4qu2l.json"
+												background="transparent"
+												speed="1"
+												style="width: 300px; height: 300px"
+												loop
+												autoplay
+											></lottie-player>
+										</div>
+									</li>
+									<li class="splide__slide contact-slide-grid">
+										<div class="title ">
+											<h2>Creating Wealth for Bharath</h2>
+											<p>
+												Lorem ipsum dolor sit amet consectetur
+												adipisicing elit. Temporibus animi unde
+												assumenda possimus veritatis delectus
+												asperiores iusto tenetur voluptatum
+												perferendis!
+											</p>
+										</div>
+										<div class="lottie">
+											<lottie-player
+												src="https://assets5.lottiefiles.com/packages/lf20_XyfCyq.json"
+												background="transparent"
+												speed="1"
+												style="width: 300px; height: 300px"
+												loop
+												autoplay
+											></lottie-player>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="contact-grid-item2">
+						<div class="contact-form">
+							<h2>Start your wealth journey with us</h2>
+							<form action="">
+								<div class="form__group field">
+									<input
+										type="input"
+										class="form__field"
+										placeholder="Name"
+										name="name"
+										id="name"
+										required
+									/>
+									<label for="name" class="form__label">Name</label>
+								</div>
+								<div class="form__group field">
+									<input
+										type="input"
+										class="form__field"
+										placeholder="Email"
+										name="email"
+										id="email"
+										required
+									/>
+									<label for="email" class="form__label">Email</label>
+								</div>
+								<div class="form__group field">
+									<input
+										type="input"
+										class="form__field"
+										placeholder="Phone Number"
+										name="phone"
+										id="phone"
+										required
+									/>
+									<label for="name" class="form__label"
+										>Phone Number</label
+									>
+								</div>
+								<div class="form__group field">
+									<select name="product" class="form__field" id="">
+										<option default value="">Select a product</option>
+										<option value="">Test1</option>
+										<option value="">Test1</option>
+										<option value="">Test1</option>
+										<option value="">Test1</option>
+									</select>
+								</div>
+								<input
+									class="contact-submit"
+									type="submit"
+									value="Submit"
+								/>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section id="'footer">
 			<footer>
 				<div class="footer-container">
@@ -53,7 +197,8 @@
 						<div class="footer-grid-item">
 							<h3>Location</h3>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil minus consequuntur delectus unde.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Nihil minus consequuntur delectus unde.
 							</p>
 						</div>
 						<div class="footer-grid-item">
@@ -87,6 +232,9 @@
 			</footer>
 		</section>
 		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+		<script src="main.js"></script>
 		<script>
 			particlesJS.load('particles-js', './particles.json', function () {
 				console.log('callback - particles.js config loaded');
