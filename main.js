@@ -25,6 +25,7 @@ const navSlide = () => {
 }
 
 navSlide();
+
 document.addEventListener('DOMContentLoaded', function () {
 	if (document.getElementById('contact-slider') != null) {
 		var sliderNew = new Splide('#contact-slider', {

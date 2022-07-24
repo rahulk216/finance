@@ -78,7 +78,7 @@ img {
 
 .wave {
 	position: absolute;
-	top: 85%;
+	top:83%;
 }
 
 
@@ -280,7 +280,7 @@ nav {
     min-height: 8vh;
     background-color: transparent;
     font-family: 'Poppins', sans-serif;
-    position: absolute;
+    /* position: absolute; */
     width: 85%;
     margin: auto;
 	z-index: 999;
@@ -289,23 +289,23 @@ nav {
 
 .logo img {
 	width: 100px;
+	margin-top:0.6rem;
 }
 
 .nav-links {
-	background-color: #52ab98;
+	background-color: #fafafa;
     position: fixed;
     right: 0;
-    top: 0;
-    height: 92vh;
+    /* top: -100vh; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 55%;
-    transform: translate(100%);
+    width: 100%;
+    transform: translateY(-60%); 
     transition: transform 0.3s ease;
     z-index: 990;
 	padding-top: 5rem;
-	
 }
 
 .nav-links li {
@@ -328,7 +328,7 @@ nav {
 	height: 3px;
 	background-color:var(--color-blue-3);
 	margin: 5px;
-	transition: all 0.3s ease;
+	transition: all 1s ease;
 }
 
 .nav-links li {
@@ -337,7 +337,7 @@ nav {
 }
 
 .nav-active {
-	transform: translate(0%);
+	transform: translateY(54%); 
 }
 
 
@@ -440,7 +440,7 @@ body {
 	}
 
 	.wave {
-		top: 40%;
+		top: 44%;
 	}
 
 	.landing-screen p {
