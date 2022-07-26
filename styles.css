@@ -80,8 +80,60 @@ img {
 	position: absolute;
 	top:86%;
 }
-
-
+/*header*/
+.nav{
+	height:4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:2.5rem 1.6rem;
+}
+.menu-toggle > *{
+	font-size:2.5rem;
+	color:var(--color-blue-4)
+}
+.logo{
+	height:60px;
+}
+.nav-items{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var();
+	position: fixed;
+	top:0;
+	left:100%;
+	width:80%;
+	z-index:999;
+	background-color:#fff;
+	height:100vh;
+	transition: all 0.6s ease-in-out;
+	opacity: 0.94;
+}
+.active-navbar{
+	left:20%
+}
+.nav-items .close-button{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:1.3rem 2rem;
+	border-bottom: 1px solid black;
+	width:100%;
+	
+}
+.nav-items .close-button p{
+	font-weight: bold;
+}
+.close-button .close{
+	font-size:2rem
+}
+.nav-links a{
+	margin-left:1rem;
+	padding:1rem;
+	font-weight: bold;
+	color:var(--color-blue-1)
+}	
 /*main*/
 
 
@@ -273,104 +325,7 @@ li {
 /*Header*/
 
 
-nav {
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 8vh;
-    background-color: transparent;
-    font-family: 'Poppins', sans-serif;
-    /* position: absolute; */
-    width: 85%;
-    margin: auto;
-	z-index: 999;
-	left:20px;
-}
-
-.logo img {
-	width: 100px;
-	margin-top:0.6rem;
-}
-
-.nav-links {
-	background-color: #fafafa;
-    position: fixed;
-    right: 0;
-    /* top: -100vh; */
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateY(-60%); 
-    transition: transform 0.3s ease;
-    z-index: 990;
-	padding-top: 5rem;
-}
-
-.nav-links li {
-	list-style: none;
-}
-
-.nav-links a {
-	color: var(--color-blue-1);
-	text-decoration: none;
-	letter-spacing: 3px;
-	font-size: 10px;
-}
-
-.burger {
-	cursor: pointer;
-}
-
-.burger div {
-	width: 25px;
-	height: 3px;
-	background-color:var(--color-blue-3);
-	margin: 5px;
-	transition: all 1s ease;
-}
-
-.nav-links li {
-	opacity: 0;
-	padding-top:16px;
-}
-
-.nav-active {
-	transform: translateY(54%); 
-}
-
-
-@keyframes navLinksSlide {
-	from {
-		opacity: 0;
-		transform: translate(50px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translate(0px);
-	}
-}
-
-.animate .line1 {
-	transform: rotate(-45deg) translate(-6px, 6px);
-}
-
-.animate .line2 {
-	opacity: 0;
-}
-
-.animate .line3 {
-	transform: rotate(45deg) translate(-5px, -6px);
-}
-
-html,
-body {
-	max-width: 100%;
-	overflow-x: hidden;
-}
-
+/* 
 /*Header ends*/
 @media only screen and (min-width: 768px) {
 	.footer-grid-item {

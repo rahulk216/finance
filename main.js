@@ -1,31 +1,24 @@
-// particlesJS.load('particles-js', 'assets/particles.json', function() {
-//     console.log('callback - particles.js config loaded');
-// });
-// Header
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-    burger.addEventListener('click', () => {
+const nav = document.querySelector('.nav');
+const open = document.querySelector('.open');
+const close = document.querySelector('.close');
 
-        //toggle active class
-        nav.classList.toggle('nav-active');
-        // Animate links
-        navLinks.forEach((link, index) => {
-            if(link.style.animation){
-                link.style.animation=''
-            }
-            else{
-                 link.style.animation = `navLinksSlide 0.5s ease forwards ${index / 7}s`;
-            }
-           
-        });
-        burger.classList.toggle('animate');
-    });
+const navItems = document.querySelector('.nav-items');
+const navLinks = document.getElementsByClassName('nav-links');
+console.log(navLinks);
+function navbar() {
+	open.addEventListener('click', () => {
+		navItems.classList.add('active-navbar');
+	});
+	close.addEventListener('click', () => {
+		navItems.classList.remove('active-navbar');
+	});
+	for (var i = 0; i < navLinks.length; i++) {
+		navLinks[i].addEventListener('click', () => {
+			navItems.classList.remove('active-navbar');
+		});
+	}
 }
-
-navSlide();
-
+navbar();
 document.addEventListener('DOMContentLoaded', function () {
 	if (document.getElementById('contact-slider') != null) {
 		var sliderNew = new Splide('#contact-slider', {
