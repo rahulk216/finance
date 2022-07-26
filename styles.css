@@ -88,6 +88,23 @@ img {
 	justify-content: space-between;
 	padding:2.5rem 1.6rem;
 }
+.open-navbar .nav::before {
+	opacity: 1;
+    transform: scale(1);
+}
+.nav::before{
+	content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s;
+}
 .menu-toggle > *{
 	font-size:2.5rem;
 	color:var(--color-blue-4)
