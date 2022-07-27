@@ -4,7 +4,7 @@ const close = document.querySelector('.close');
 const body = document.querySelector('.body');
 const navItems = document.querySelector('.nav-items');
 const navLinks = document.getElementsByClassName('nav-links');
-console.log(navLinks);
+
 function navbar() {
 	open.addEventListener('click', () => {
 		navItems.classList.add('active-navbar');
