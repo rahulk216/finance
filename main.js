@@ -31,4 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
 		sliderNew.mount();
 		console.log('mounted');
 	}
+
+	if (document.getElementById('testimonial-slider') != null) {
+		var sliderNew = new Splide('#testimonial-slider', {
+			width: '100%',
+			arrows: false,
+		});
+		sliderNew.mount();
+		console.log('mounted');
+	}
 });

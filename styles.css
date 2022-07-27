@@ -151,6 +151,7 @@ img {
 	font-weight: bold;
 	color:var(--color-blue-1)
 }	
+
 /*main*/
 
 
@@ -249,6 +250,9 @@ li {
 }
 
 /*title grid*/
+.title p{
+	margin-top: 1rem;
+}
 .contact-slide-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -259,14 +263,6 @@ li {
 	grid-column: span 2
 }
 
-/* .contact-form form > *{
-	padding-bottom: 1rem;
-	margin-bottom:1.6rem;
-} */
-/*contact input*/
-/* .field{
-	margin-bottom:1.4rem;
-} */
 .form__group {
 	position: relative;
 	padding: 15px 0 0;
@@ -342,16 +338,72 @@ li {
 	letter-spacing: 0.1rem;
 }
 
-/*Header*/
-
-
-/* 
+/*Testimonial*/
+.testimonial-container{
+	width:var(--section-width);
+	margin:auto;
+	margin-bottom:3rem;
+}
+.testimonial-container h2{
+	text-align: center;
+	color:var(--color-blue-1);
+}
+.testimonial-slide-grid{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	place-items:center;
+}
+.testimonial-image, .testimonial-content{
+	grid-column: span 5;
+}
+.testimonial-image img{
+	border-radius: 50% ;
+	border:2px solid var(--color-blue-1);
+	padding:0.3rem;
+	margin:3.5rem 0rem;
+}
+.testimonial-content h2{
+	text-align: left;
+	margin-bottom:0.4rem;
+}
+.testimonial-name{
+	display: flex;
+	align-items: center;
+	margin-bottom:0.6rem ;
+}
+.testimonial-content{
+	position:relative;
+	margin-bottom:2rem;
+}
+.testimonial-content .quote-left{
+	position: absolute;
+	top:-12%;
+	left:0;
+	font-size:3rem;
+	z-index:-20;
+	color:var(--color-blue-2);
+	opacity:0.3;
+	transform: rotate(5deg)
+}
+.quote-right{
+	position: absolute;
+	top:90%;
+	left:80%;
+	display: flex;
+	justify-content: flex-end;
+	font-size:3rem;
+	z-index:-20;
+	color:var(--color-blue-2);
+	opacity:0.3;
+	transform: rotate(5deg)
+}
 /*Header ends*/
 @media only screen and (min-width: 768px) {
 	.menu-toggle{
 		display: none;
 		
 	}
+
 	.open-navbar .nav::before {
 		opacity: 0;
 		transform: scale(0);
@@ -418,6 +470,12 @@ li {
 	.contact-grid-item2 {
 		grid-column: span 3
 	}
+	.testimonial-image{
+		grid-column: span 2;
+	} 
+	.testimonial-content{
+		grid-column: span 3;
+	}
 }
 
 
@@ -467,6 +525,7 @@ li {
 
 	.title p {
 		width: 90%;
+		
 	}
 
 	.contact-grid-item1 {
