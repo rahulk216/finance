@@ -353,15 +353,22 @@ li {
 	display: grid;
 	grid-template-columns: repeat(5,1fr);
 	place-items:center;
+	grid-gap: 2rem;
 }
 .testimonial-image, .testimonial-content{
 	grid-column: span 5;
+	
 }
+.testimonial-image{
+	padding-top:10px;
+}
+
 .testimonial-image img{
 	border-radius: 50% ;
 	border:2px solid var(--color-blue-1);
-	padding:0.3rem;
-	margin:3.5rem 0rem;
+	padding:0.3rem;	
+	width:50%;
+	margin:auto;
 }
 .testimonial-content h2{
 	text-align: left;
@@ -477,6 +484,10 @@ li {
 	.testimonial-content{
 		grid-column: span 3;
 	}
+	.testimonial-image img{
+		width:77%;
+		
+	}
 }
 
 
@@ -562,4 +573,12 @@ li {
 	.testimonial-container h2{
 		font-size: 2rem;
 	}
+	.testimonial-image img{
+		width:84%;
+		
+	}
+	.testimonial-image{
+		padding-top:15px;
+	}
+	
 }
