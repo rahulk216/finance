@@ -348,6 +348,7 @@ li {
 .testimonial-container h2{
 	text-align: center;
 	color:var(--color-blue-1);
+	margin-bottom:2rem;
 }
 .testimonial-slide-grid{
 	display: grid;
@@ -483,9 +484,15 @@ li {
 	} 
 	.testimonial-content{
 		grid-column: span 3;
+		padding: 2rem;
 	}
 	.testimonial-image img{
 		width:77%;
+		
+	}
+	.testimonial-content .quote-left{
+
+		top:-2%;
 		
 	}
 }
@@ -572,7 +579,7 @@ li {
 	/*Header ends*/
 	.testimonial-container h2{
 		font-size: 2rem;
-		margin-bottom:3rem;
+		margin-bottom:1rem;
 	}
 	.testimonial-image img{
 		width:84%;
@@ -580,6 +587,11 @@ li {
 	}
 	.testimonial-image{
 		padding-top:15px;
+	}
+	.testimonial-content .quote-left{
+
+		top:0%;
+		
 	}
 	
 }
