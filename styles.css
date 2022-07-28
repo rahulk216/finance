@@ -572,6 +572,7 @@ li {
 	/*Header ends*/
 	.testimonial-container h2{
 		font-size: 2rem;
+		margin-bottom:3rem;
 	}
 	.testimonial-image img{
 		width:84%;
