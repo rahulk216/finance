@@ -557,5 +557,7 @@ li {
 	}
 
 	/*Header ends*/
-
+	.testimonial-container h2{
+		font-size: 2rem;
+	}
 }
