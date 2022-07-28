@@ -120,7 +120,8 @@ img {
 	position: fixed;
 	top:0;
 	left:100%;
-	width:80%;
+	/*width:80%;*/
+	width:83%;
 	z-index:999;
 	background-color:#fff;
 	height:100vh;
@@ -493,7 +494,8 @@ li {
 
 	.landing-screen {
 		width: 50%;
-		padding-top: 10rem;
+		/*padding-top: 10rem;*/
+		padding-top: 7rem;
 	}
 
 	.wave {
