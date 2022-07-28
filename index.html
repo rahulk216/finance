@@ -12,7 +12,10 @@
 			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
 		/>
 		<link rel="stylesheet" href="styles.css" />
-
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+		/>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -22,7 +25,7 @@
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 		></script>
 	</head>
-	<body>
+	<body class="body">
 		<div id="particles-js">
 			<header class="main-header">
 				<nav class="nav">
@@ -36,22 +39,20 @@
 					<ul class="nav-items">
 						<div class="close-button">
 							<p>Menu</p>
-							<ion-icon class='close' name="close-outline"></ion-icon>
+							<ion-icon class="close" name="close-outline"></ion-icon>
 						</div>
 						<li class="nav-links"><a href="#">Home</a></li>
 						<li class="nav-links"><a href="#">About Us</a></li>
-						<li class="nav-links"><a href="#">Approach</a></li>
 						<li class="nav-links">
-							<a href="#">Invest in Mutual FUnd</a>
+							<a href="#">Mutual Fund</a>
 						</li>
 						<li class="nav-links"><a href="#">Get Insurance</a></li>
 						<li class="nav-links"><a href="#">Services</a></li>
-						<li class="nav-links"><a href="#">Knowledge Center</a></li>
 						<li class="nav-links"><a href="#">Contact</a></li>
-						<li class="nav-links"><a href="#">Login</a></li>
+						<li class="nav-links login"><a href="#">Login</a></li>
 					</ul>
 					<div class="menu-toggle">
-						<ion-icon class='open'name="menu-outline"></ion-icon>
+						<ion-icon class="open" name="menu-outline"></ion-icon>
 					</div>
 				</nav>
 			</header>
@@ -170,6 +171,7 @@
 									/>
 									<label for="name" class="form__label">Name</label>
 								</div>
+
 								<div class="form__group field">
 									<input
 										type="input"
@@ -179,13 +181,14 @@
 										id="email"
 										required
 									/>
-									<label for="email" class="form__label">Email</label>
+									<label for="Email" class="form__label">Email</label>
 								</div>
+
 								<div class="form__group field">
 									<input
 										type="input"
 										class="form__field"
-										placeholder="Phone Number"
+										placeholder="phone"
 										name="phone"
 										id="phone"
 										required
@@ -210,6 +213,164 @@
 								/>
 							</form>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="testimonial">
+			<div class="testimonial-container">
+				<h2>Testimonials</h2>
+				<div
+					id="testimonial-slider"
+					class="splide"
+					aria-label="Splide Basic HTML Example"
+				>
+					<div class="splide__track">
+						<ul class="splide__list slider-text">
+							<li class="splide__slide testimonial-slide-grid">
+								<div class="testimonial-image">
+									<img src="./assets/images/download.jpg" alt="User" />
+								</div>
+								<div class="testimonial-content">
+									<div class="quote-left">
+										<i
+											class="fa fa-quote-left"
+											aria-hidden="true"
+										></i>
+									</div>
+									<div class="testimonial-name">
+										<h3>Kate Rogers -</h3>
+										&nbsp;
+										<p>Graphic Designer</p>
+									</div>
+									<div>
+										<div class="stars">
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+										</div>
+										<div class="testimonial-subject">
+											<h2>Lorem ipsum dolor sit.</h2>
+											<p>
+												Lorem ipsum, dolor sit amet consectetur
+												adipisicing elit. Assumenda dolore est magni
+												quaerat minima saepe amet temporibus. Libero
+												voluptatum error ea doloribus accusamus?
+												Beatae aliquam dolorem sapiente mollitia.
+												Dolorem obcaecati, dolore, odit molestias
+												sequi dolorum deserunt quas neque sunt iure
+												hic reprehenderit vel id deleniti sint
+												maiores, assumenda laborum nobis!
+											</p>
+										</div>
+									</div>
+									<div class="quote-right">
+										<i
+											class="fa fa-quote-right"
+											aria-hidden="true"
+										></i>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide testimonial-slide-grid">
+								<div class="testimonial-image">
+									<img src="./assets/images/download.jpg" alt="User" />
+								</div>
+								<div class="testimonial-content">
+									<div class="quote-left">
+										<i
+											class="fa fa-quote-left"
+											aria-hidden="true"
+										></i>
+									</div>
+									<div class="testimonial-name">
+										<h3>Kate Rogers -</h3>
+										&nbsp;
+										<p>Graphic Designer</p>
+									</div>
+									<div>
+										<div class="stars">
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+										</div>
+										<div class="testimonial-subject">
+											<h2>Lorem ipsum dolor sit.</h2>
+											<p>
+												Lorem ipsum, dolor sit amet consectetur
+												adipisicing elit. Voluptate eveniet velit
+												illo optio aspernatur ullam quia,
+												repudiandae nostrum, officia dolor voluptas.
+												Illum, recusandae quas! Exercitationem autem
+												molestias ipsa illo sapiente, porro ex
+												inventore eos amet, accusantium adipisci
+												perspiciatis fugit numquam! Ducimus fugiat
+												corporis laborum libero numquam accusamus
+												est harum blanditiis.
+											</p>
+										</div>
+									</div>
+									<div class="quote-right">
+										<i
+											class="fa fa-quote-right"
+											aria-hidden="true"
+										></i>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide testimonial-slide-grid">
+								<div class="testimonial-image">
+									<img src="./assets/images/download.jpg" alt="User" />
+								</div>
+								<div class="testimonial-content">
+									<div class="quote-left">
+										<i
+											class="fa fa-quote-left"
+											aria-hidden="true"
+										></i>
+									</div>
+									<div class="testimonial-name">
+										<h3>Kate Rogers -</h3>
+										&nbsp;
+										<p>Graphic Designer</p>
+									</div>
+									<div>
+										<div class="stars">
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+											<ion-icon name="star-outline"></ion-icon>
+										</div>
+										<div class="testimonial-subject">
+											<h2>Lorem ipsum dolor sit.</h2>
+											<p>
+												Lorem ipsum dolor sit amet consectetur
+												adipisicing elit. Porro unde earum sed
+												voluptatum illo sapiente accusantium,
+												numquam fugiat consequuntur atque libero
+												consectetur a ducimus fugit, eius, cum aut
+												doloribus odit quos sunt ullam deleniti
+												pariatur iure animi. Minus ratione
+												distinctio assumenda est architecto
+												recusandae, harum, eius perspiciatis
+												excepturi, dolor nam.
+											</p>
+										</div>
+									</div>
+									<div class="quote-right">
+										<i
+											class="fa fa-quote-right"
+											aria-hidden="true"
+										></i>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
