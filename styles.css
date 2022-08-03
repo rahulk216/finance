@@ -181,8 +181,12 @@ footer {
 	margin-bottom: 0.3rem;
 }
 
+.footer-grid-item span{
+	color: var(--color-blue-3);
+
+}
 .footer-grid-item p,
-li {
+li, a{
 	color: var(--color-blue-4)
 }
 
@@ -534,9 +538,9 @@ li {
 	}
 
 	.contact-slide-grid h2 {
-		font-size: 3rem;
-		line-height: 3.5rem;
-		letter-spacing: -0.1rem;
+		font-size: 1.5rem;
+    line-height: 1.9rem;
+    letter-spacing: -0.1rem;
 	}
 
 	.contact-grid-item1 {
