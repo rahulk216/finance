@@ -394,7 +394,11 @@ li, a{
 	font-weight: 700;
 	letter-spacing: 0.1rem;
 }
-
+.contact{
+	width:var(--section-width);
+	margin: auto;
+	margin-top:3rem;
+}
 /*Testimonial*/
 .testimonial-container{
 	width:var(--section-width);
