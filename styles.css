@@ -51,22 +51,30 @@ img {
     height: 600px;
 	object-fit: fill;
 }
-.video-overlay{
+/* .video-overlay{
 	position: absolute;
     background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
     width: 100%;
-    height: 600px;
+    height:max-content;
 	background-color: #000; 
-	opacity:0.4;
-	z-index:-50;
-   
-}
+	opacity:1;
+	z-index:-50; 
+} */
 
 .main-landing{
 	position: relative;
 	height:80vh;
 }
-
+.main-landing::before{
+	content:'';
+	position: absolute;
+    background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
+    width: 100%;
+    height:81vh;
+	background-color: #000; 
+	opacity:0.4;
+	z-index:-50; 
+}
 
 .landing-screen {
 	position: absolute;
@@ -82,11 +90,12 @@ img {
 }
 .landing-screen p {
 	font-weight: 700;
+	font-size: 1.6rem;
 }
 
 .landing-screen button {
 	margin-top: 1rem;
-	padding: 0.5rem 1rem;
+	padding: 1rem 1.5rem;
 	cursor: pointer;
 	border: none;
 	border-radius: 10px;
@@ -139,7 +148,7 @@ img {
 	margin-top:2rem;
 }
 .menu-toggle > *{
-	font-size:2.5rem;
+	font-size:3rem;
 	color:var(--color-blue-4)
 }
 .logo{
@@ -173,6 +182,7 @@ img {
 	padding:1.3rem 2rem;
 	border-bottom: 1px solid black;
 	width:100%;
+	
 	
 }
 .nav-items .close-button p{
@@ -504,7 +514,7 @@ li, a{
 		top: 79%;
 	}
 	.contact{
-		display:none;
+		display:none
 	}
 	.landing-screen {
 		width: 50%;
@@ -575,21 +585,29 @@ li, a{
 	p {
 		line-height: 1.8rem;
 	}
-
-
+	.main-landing{
+		height:100vh;
+	}
+	.main-landing::before{
+		height:100vh;
+	}
+	
+	.landing-screen p {
+		font-weight: 700;
+		font-size: 1.8rem;
+		line-height: 2.6rem;
+		width:80%;
+	}
 	.landing-screen {
 		width: 90%;
 		/*padding-top: 10rem;*/
-		padding-top: 2rem;
+		padding-top: 7rem;
 	}
 
 	.wave {
 		top: 44%;
 	}
 
-	.landing-screen p {
-		width: 60%;
-	}
 
 	.footer-container {
 		padding: 4rem 0;
