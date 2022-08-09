@@ -307,6 +307,9 @@ li, a{
 .title p{
 	margin-top: 1rem;
 }
+#contact-slider{
+	margin-top:4rem;
+}
 .contact-slide-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
