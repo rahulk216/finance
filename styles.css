@@ -503,7 +503,9 @@ li, a{
 	.wave {
 		top: 79%;
 	}
-
+	.contact{
+		display:none;
+	}
 	.landing-screen {
 		width: 50%;
 		padding-top: 18rem;
