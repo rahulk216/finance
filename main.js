@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		var sliderNew = new Splide('#contact-slider', {
 			width: '100%',
 			arrows: false,
+			autoplay: true,
 		});
 		sliderNew.mount();
 		console.log('mounted');
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		var sliderNew = new Splide('#testimonial-slider', {
 			width: '100%',
 			arrows: false,
+			autoplay: true,
 		});
 		sliderNew.mount();
 		console.log('mounted');
