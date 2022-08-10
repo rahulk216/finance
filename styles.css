@@ -314,6 +314,7 @@ li, a{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	place-items: center;
+	grid-gap: 1rem
 }
 
 .contact-slide-grid div {
