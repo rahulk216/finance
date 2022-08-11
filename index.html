@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +11,7 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
 		/>
+		<link rel="icon" href="./assets/images/logo1.png" />
 		<link rel="stylesheet" href="styles.css" />
 		<link
 			rel="stylesheet"
@@ -25,14 +26,19 @@
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 		></script>
 	</head>
+
 	<body class="body">
-		<div id="particles-js">
+		<div class="main-landing">
+			<!-- <div class="video-overlay"></div> -->
+			<video autoplay loop muted class="video">
+				<source src="assets/Finance_video.mp4" type="video/mp4" />
+			</video>
 			<header class="main-header">
 				<nav class="nav">
 					<div class="nav-logo">
 						<img
 							class="logo"
-							src="./assets/images/finsystem-logo.png"
+							src="./assets/images/logo1.png"
 							alt="FIN SYSTEM"
 						/>
 					</div>
@@ -57,106 +63,17 @@
 				</nav>
 			</header>
 			<div class="landing-screen">
-				<h1>FIN SYSTEM</h1>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-					Adipisci deserunt doloribus animi labore soluta dignissimos, rem
-					optio doloremque sed similique.
-				</p>
-				<button>Contact us</button>
-			</div>
-			<svg
-				class="wave"
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 1440 320"
-			>
-				<path
-					fill="#fff"
-					fill-opacity="1"
-					d="M0,288L1440,160L1440,320L0,320Z"
-				></path>
-			</svg>
-		</div>
-		<section id="main">
-			<div class="contact-container">
-				<div class="contact-grid">
-					<div class="contact-grid-item1">
-						<div
-							id="contact-slider"
-							class="splide"
-							aria-label="Splide Basic HTML Example"
-						>
-							<div class="splide__track">
-								<ul class="splide__list slider-text">
-									<li class="splide__slide contact-slide-grid">
-										<div class="title">
-											<h2>Creating Wealth for Bharath</h2>
-											<p>
-												Lorem ipsum dolor sit amet consectetur
-												adipisicing elit. Est quos esse, sed ipsam
-												magni deserunt quas rerum aspernatur illo
-												optio?
-											</p>
-										</div>
-										<div class="lottie">
-											<lottie-player
-												src="https://assets5.lottiefiles.com/packages/lf20_gxtah1wp.json"
-												background="transparent"
-												speed="1"
-												style="width: 300px; height: 300px"
-												loop
-												autoplay
-											></lottie-player>
-										</div>
-									</li>
-									<li class="splide__slide contact-slide-grid">
-										<div class="title">
-											<h2>Creating Wealth for Bharath</h2>
-											<p>
-												Lorem ipsum dolor sit amet consectetur
-												adipisicing elit. Ut blanditiis molestiae
-												corrupti assumenda facilis doloremque
-												tenetur laborum? Placeat, nesciunt ipsam.
-											</p>
-										</div>
-										<div class="lottie">
-											<lottie-player
-												src="https://assets5.lottiefiles.com/packages/lf20_s5h4qu2l.json"
-												background="transparent"
-												speed="1"
-												style="width: 300px; height: 300px"
-												loop
-												autoplay
-											></lottie-player>
-										</div>
-									</li>
-									<li class="splide__slide contact-slide-grid">
-										<div class="title">
-											<h2>Creating Wealth for Bharath</h2>
-											<p>
-												Lorem ipsum dolor sit amet consectetur
-												adipisicing elit. Temporibus animi unde
-												assumenda possimus veritatis delectus
-												asperiores iusto tenetur voluptatum
-												perferendis!
-											</p>
-										</div>
-										<div class="lottie">
-											<lottie-player
-												src="https://assets5.lottiefiles.com/packages/lf20_XyfCyq.json"
-												background="transparent"
-												speed="1"
-												style="width: 300px; height: 300px"
-												loop
-												autoplay
-											></lottie-player>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
+				<div class="landing-screen-grid">
+					<div class="landing-screen-grid-item1">
+						<h1>Life happens fast. Plan well.</h1>
+						<p>
+							Every Successful Financial Planning Starts with The Right
+							Partner and Plan to Meet Your Goals. Schedule Your Free
+							Financial Planning Consultation Today!
+						</p>
+						<button>Know More</button>
 					</div>
-					<div class="contact-grid-item2">
+					<div class="landing-screen-grid-item2">
 						<div class="contact-form">
 							<h2>Start your wealth journey with us</h2>
 							<form action="">
@@ -193,17 +110,16 @@
 										id="phone"
 										required
 									/>
-									<label for="name" class="form__label"
-										>Phone Number</label
-									>
+									<label for="name" class="form__label">Phone</label>
 								</div>
 								<div class="form__group field">
 									<select name="product" class="form__field" id="">
 										<option default value="">Select a product</option>
-										<option value="">Test1</option>
-										<option value="">Test1</option>
-										<option value="">Test1</option>
-										<option value="">Test1</option>
+										<option value="mf">Mutual Fund</option>
+										<option value="ins">Insurance</option>
+										<option value="fd">Fixed Deposit</option>
+										<option value="pm">Portfolio Management</option>
+										<option value="rs">Retirement Solutions</option>
 									</select>
 								</div>
 								<input
@@ -216,6 +132,172 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<section class="contact">
+			<div class="contact-form">
+				<h2>Start your wealth journey with us</h2>
+				<form action="">
+					<div class="form__group field">
+						<input
+							type="input"
+							class="form__field"
+							placeholder="Name"
+							name="name"
+							id="name"
+							required
+						/>
+						<label for="name" class="form__label">Name</label>
+					</div>
+
+					<div class="form__group field">
+						<input
+							type="input"
+							class="form__field"
+							placeholder="Email"
+							name="email"
+							id="email"
+							required
+						/>
+						<label for="Email" class="form__label">Email</label>
+					</div>
+
+					<div class="form__group field">
+						<input
+							type="input"
+							class="form__field"
+							placeholder="phone"
+							name="phone"
+							id="phone"
+							required
+						/>
+						<label for="name" class="form__label">Phone</label>
+					</div>
+					<div class="form__group field">
+						<select name="product" class="form__field" id="">
+							<option default value="">Select a product</option>
+							<option value="">Mutual Fund</option>
+							<option value="">Insurance</option>
+							<option value="">Fixed Deposit</option>
+							<option value="">Portfolio Management</option>
+							<option value="">Retirement Solutions</option>
+						</select>
+					</div>
+					<input class="contact-submit" type="submit" value="Submit" />
+				</form>
+			</div>
+		</section>
+		<section id="main">
+			<div class="contact-container">
+				<div class="contact-grid">
+					<div class="contact-grid-item1">
+						<div
+							id="contact-slider"
+							class="splide"
+							aria-label="Splide Basic HTML Example"
+						>
+							<div class="splide__track">
+								<ul class="splide__list slider-text">
+									<li class="splide__slide contact-slide-grid">
+										<div class="title">
+											<h2>
+												WHETHER YOU ARE AN INVESTOR SEEKING
+												INDEPENDENT FINANCIAL ADVICE OR LOOKING TO
+												TAKE THE FIRST STEP TO BUILDING A FINANCIAL
+												PLAN, WE ARE THE FIRM FOR YOU!
+											</h2>
+										</div>
+										<div class="lottie">
+											<img
+												src="./assets/images/Image 1.webp"
+												alt=""
+											/>
+										</div>
+									</li>
+									<li class="splide__slide contact-slide-grid">
+										<div class="title">
+											<h2>
+												A HIGHER LEVEL OF COMPLEXITY REQUIRES A
+												HIGHER LEVEL OF EXPERIENCE
+											</h2>
+										</div>
+										<div class="lottie">
+											<img
+												src="./assets/images/Image 2.webp"
+												alt=""
+											/>
+										</div>
+									</li>
+									<li class="splide__slide contact-slide-grid">
+										<div class="title">
+											<h2>
+												EXCEPTIONAL PEOPLE SEEKING EXCEPTIONAL
+												RESULTS.
+											</h2>
+										</div>
+										<div class="lottie">
+											<img
+												src="./assets/images/Image 3.webp"
+												alt=""
+											/>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="contact-grid-item2">
+						<!--  -->
+						<h2 style="text-align: center; color: #2b6777">
+							Why Fin System?
+						</h2>
+						<div class="details-grid">
+							<div class="details-grid-item">
+								<h3>GROW</h3>
+								<p>
+									Preserve your investments through comprehensive and
+									ongoing wealth management services
+								</p>
+							</div>
+							<div class="details-grid-item">
+								<h3>MAINTAIN</h3>
+								<p>
+									Your long-term goals and objectives as the absolute
+									priority
+								</p>
+							</div>
+							<div class="details-grid-item">
+								<h3>TAILOR</h3>
+								<p>
+									Each investment management portfolio to service your
+									individual needs
+								</p>
+							</div>
+							<div class="details-grid-item">
+								<h3>PURSUE</h3>
+								<p>
+									The highest levels of academic degrees and
+									professional accreditation
+								</p>
+							</div>
+							<div class="details-grid-item">
+								<h3>CONDUCT</h3>
+								<p>
+									Business with unparalleled integrity according to
+									exceptionally high ethical standards
+								</p>
+							</div>
+							<div class="details-grid-item">
+								<h3>AFFIRM</h3>
+								<p>
+									Our commitment to the philanthropic needs of the
+									local communities in which we live and work
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="details-container"></div> -->
 		</section>
 		<section id="testimonial">
 			<div class="testimonial-container">
@@ -238,114 +320,8 @@
 											aria-hidden="true"
 										></i>
 									</div>
-									<div class="testimonial-name">
-										<h3>Kate Rogers -</h3>
-										&nbsp;
-										<p>Graphic Designer</p>
-									</div>
+
 									<div>
-										<div class="stars">
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-										</div>
-										<div class="testimonial-subject">
-											<h2>Lorem ipsum dolor sit.</h2>
-											<p>
-												Lorem ipsum, dolor sit amet consectetur
-												adipisicing elit. Assumenda dolore est magni
-												quaerat minima saepe amet temporibus. Libero
-												voluptatum error ea doloribus accusamus?
-												Beatae aliquam dolorem sapiente mollitia.
-												Dolorem obcaecati, dolore, odit molestias
-												sequi dolorum deserunt quas neque sunt iure
-												hic reprehenderit vel id deleniti sint
-												maiores, assumenda laborum nobis!
-											</p>
-										</div>
-									</div>
-									<div class="quote-right">
-										<i
-											class="fa fa-quote-right"
-											aria-hidden="true"
-										></i>
-									</div>
-								</div>
-							</li>
-							<li class="splide__slide testimonial-slide-grid">
-								<div class="testimonial-image">
-									<img src="./assets/images/download.jpg" alt="User" />
-								</div>
-								<div class="testimonial-content">
-									<div class="quote-left">
-										<i
-											class="fa fa-quote-left"
-											aria-hidden="true"
-										></i>
-									</div>
-									<div class="testimonial-name">
-										<h3>Kate Rogers -</h3>
-										&nbsp;
-										<p>Graphic Designer</p>
-									</div>
-									<div>
-										<div class="stars">
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-										</div>
-										<div class="testimonial-subject">
-											<h2>Lorem ipsum dolor sit.</h2>
-											<p>
-												Lorem ipsum, dolor sit amet consectetur
-												adipisicing elit. Voluptate eveniet velit
-												illo optio aspernatur ullam quia,
-												repudiandae nostrum, officia dolor voluptas.
-												Illum, recusandae quas! Exercitationem autem
-												molestias ipsa illo sapiente, porro ex
-												inventore eos amet, accusantium adipisci
-												perspiciatis fugit numquam! Ducimus fugiat
-												corporis laborum libero numquam accusamus
-												est harum blanditiis.
-											</p>
-										</div>
-									</div>
-									<div class="quote-right">
-										<i
-											class="fa fa-quote-right"
-											aria-hidden="true"
-										></i>
-									</div>
-								</div>
-							</li>
-							<li class="splide__slide testimonial-slide-grid">
-								<div class="testimonial-image">
-									<img src="./assets/images/download.jpg" alt="User" />
-								</div>
-								<div class="testimonial-content">
-									<div class="quote-left">
-										<i
-											class="fa fa-quote-left"
-											aria-hidden="true"
-										></i>
-									</div>
-									<div class="testimonial-name">
-										<h3>Kate Rogers -</h3>
-										&nbsp;
-										<p>Graphic Designer</p>
-									</div>
-									<div>
-										<div class="stars">
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-											<ion-icon name="star-outline"></ion-icon>
-										</div>
 										<div class="testimonial-subject">
 											<h2>Lorem ipsum dolor sit.</h2>
 											<p>
@@ -362,6 +338,116 @@
 											</p>
 										</div>
 									</div>
+									<div class="stars">
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+									</div>
+									<div class="testimonial-name">
+										<h3>Kate Rogers -</h3>
+										&nbsp;
+										<p>Graphic Designer</p>
+									</div>
+									<div class="quote-right">
+										<i
+											class="fa fa-quote-right"
+											aria-hidden="true"
+										></i>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide testimonial-slide-grid">
+								<div class="testimonial-image">
+									<img src="./assets/images/download.jpg" alt="User" />
+								</div>
+								<div class="testimonial-content">
+									<div class="quote-left">
+										<i
+											class="fa fa-quote-left"
+											aria-hidden="true"
+										></i>
+									</div>
+
+									<div>
+										<div class="testimonial-subject">
+											<h2>Lorem ipsum dolor sit.</h2>
+											<p>
+												Lorem ipsum dolor sit amet consectetur
+												adipisicing elit. Porro unde earum sed
+												voluptatum illo sapiente accusantium,
+												numquam fugiat consequuntur atque libero
+												consectetur a ducimus fugit, eius, cum aut
+												doloribus odit quos sunt ullam deleniti
+												pariatur iure animi. Minus ratione
+												distinctio assumenda est architecto
+												recusandae, harum, eius perspiciatis
+												excepturi, dolor nam.
+											</p>
+										</div>
+									</div>
+									<div class="stars">
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+									</div>
+									<div class="testimonial-name">
+										<h3>Kate Rogers -</h3>
+										&nbsp;
+										<p>Graphic Designer</p>
+									</div>
+									<div class="quote-right">
+										<i
+											class="fa fa-quote-right"
+											aria-hidden="true"
+										></i>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide testimonial-slide-grid">
+								<div class="testimonial-image">
+									<img src="./assets/images/download.jpg" alt="User" />
+								</div>
+								<div class="testimonial-content">
+									<div class="quote-left">
+										<i
+											class="fa fa-quote-left"
+											aria-hidden="true"
+										></i>
+									</div>
+
+									<div>
+										<div class="testimonial-subject">
+											<h2>Lorem ipsum dolor sit.</h2>
+											<p>
+												Lorem ipsum dolor sit amet consectetur
+												adipisicing elit. Porro unde earum sed
+												voluptatum illo sapiente accusantium,
+												numquam fugiat consequuntur atque libero
+												consectetur a ducimus fugit, eius, cum aut
+												doloribus odit quos sunt ullam deleniti
+												pariatur iure animi. Minus ratione
+												distinctio assumenda est architecto
+												recusandae, harum, eius perspiciatis
+												excepturi, dolor nam.
+											</p>
+										</div>
+									</div>
+									<div class="stars">
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+										<ion-icon name="star-outline"></ion-icon>
+									</div>
+									<div class="testimonial-name">
+										<h3>Kate Rogers -</h3>
+										&nbsp;
+										<p>Graphic Designer</p>
+									</div>
 									<div class="quote-right">
 										<i
 											class="fa fa-quote-right"
@@ -375,23 +461,44 @@
 				</div>
 			</div>
 		</section>
+
 		<section id="'footer">
 			<footer>
 				<div class="footer-container">
 					<div class="footer-grid">
 						<div class="footer-grid-item">
-							<h3>Fin System</h3>
+							<img
+								class="footer-logo"
+								src="./assets/images/logo1.png"
+								alt="FIN SYSTEM"
+							/>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Quam, sunt?
+								Fin System is an independent advisory firm dedicated to
+								providing clients with objective, thoughtful investment
+								and financial guidance.
 							</p>
 						</div>
 						<div class="footer-grid-item">
 							<h3>Location</h3>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Nihil minus consequuntur delectus unde.
+								<span>Registered Office: </span>#24-1-18-14B/B-0-3 Micro
+								Tower, Kemminje Temple Road, Puttur, Mangalore,
+								Karnataka – 574 202
 							</p>
+							<p>
+								<span>Corporate Office:</span> #3/7, 3rd Cross, 2nd
+								Block Koramangala, Madiwala Post Bangalore, Karnataka-
+								560 068
+							</p>
+						</div>
+						<div class="footer-grid-item">
+							<h3>Contact Us</h3>
+							<ul>
+								<li><a href="tel:9110608590">9110608590</a></li>
+								<li>
+									<a href="mailto:john@example.com"> abc@abc.com </a>
+								</li>
+							</ul>
 						</div>
 						<div class="footer-grid-item">
 							<h3>Terms of use</h3>
@@ -416,14 +523,20 @@
 				<div class="footer-bottom">
 					<p>&#169;2022 Fin System All rights reserved</p>
 					<div class="socials">
-						<span><ion-icon name="logo-instagram"></ion-icon></span>
-						<span><ion-icon name="logo-facebook"></ion-icon></span>
-						<span><ion-icon name="mail-outline"></ion-icon></span>
+						<span>
+							<ion-icon name="logo-instagram"></ion-icon>
+						</span>
+						<span>
+							<ion-icon name="logo-facebook"></ion-icon>
+						</span>
+						<span>
+							<ion-icon name="mail-outline"></ion-icon>
+						</span>
 					</div>
 				</div>
 			</footer>
 		</section>
-		<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+		<!--<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>-->
 		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 		<script src="main.js"></script>
