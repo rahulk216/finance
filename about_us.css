@@ -1,0 +1,62 @@
+.main-about-us{
+    background-color: var(--color-blue-1);
+}
+.section-aboutus {
+    width:90%;
+    margin:0 auto;
+    padding-top:5rem;
+}
+
+.section-quick-links {
+    display:grid;
+}
+
+
+.firm-section h2 {
+    color:var(--color-blue-3);
+}
+.main-about-us p{
+   color:var(--color-blue-4);
+}
+.frim-details-grid {
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.firm-grid-item {
+    padding:15px;
+    border-bottom: 2px solid var(--color-blue-2);
+}
+.border{
+   height:10px;
+   width:2px;
+   color:var(--color-blue-2);
+}
+.border {
+    height: 30px;
+    width: 2px;
+    background-color: var(--color-blue-2);
+    position: absolute;
+    left: -14px;
+    top: 11px;
+}
+.firm-grid-item.left
+{
+    display: flex;
+    position: relative;
+}
+
+.section-firm-two {
+    padding-top:40px;
+ }
+ .section-firm-two p{
+   padding-top:10px
+ }
+ 
+ .section-faces {
+   display:grid;
+   grid-template:50px /auto auto;
+ }
+ .section-faces p{
+ 
+   padding:20px
+ }
