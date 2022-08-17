@@ -73,11 +73,11 @@
  
  .section-faces {
    display:grid;
-   grid-template:50px /auto auto;
+   grid-template-columns:repeat(6,1fr);
+   grid-gap:1rem
  }
  .section-faces p{
- 
-   padding:20px
+   grid-column: span 3;
  }
  /* .section-leadership .leadership-grid .leadership-grid-item img {
     width:201px;
@@ -186,13 +186,13 @@
 
 @media only screen and (min-width: 768px) {
     .firm-grid p{
-        grid-column: span 1;
+        grid-column: span 2;
     }
     .frim-details-grid{
-        grid-column: span 1;
+        grid-column: span 2;
     }
     .section2-grid div{
-        grid-column: span 1;
+        grid-column: span 2;
     }
     .leadership-grid-item{
         grid-column: span 1;
@@ -203,5 +203,8 @@
     .section-quick-links {
         left:80%;
         right:0;   
+    }
+    .section-faces p{
+        grid-column: span 1;
     }
 }
