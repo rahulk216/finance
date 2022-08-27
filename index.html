@@ -17,6 +17,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
 		/>
+		<script src="https://kit.fontawesome.com/5688c0a896.js" crossorigin="anonymous"></script>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -25,6 +26,8 @@
 			nomodule
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
 		></script>
+		<script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+		
 	</head>
 
 	<body class="body">
@@ -47,15 +50,17 @@
 							<p>Menu</p>
 							<ion-icon class="close" name="close-outline"></ion-icon>
 						</div>
-						<li class="nav-links"><a href="#">Home</a></li>
+						<li class="nav-links"><a href="/">Home</a></li>
 						<li class="nav-links"><a href="/about.html">About Us</a></li>
 						<li class="nav-links">
-							<a href="#">Mutual Fund</a>
+							<a href="#">Invest in Mutual Fund</a>
 						</li>
 						<li class="nav-links"><a href="#">Get Insurance</a></li>
 						<li class="nav-links"><a href="#">Services</a></li>
 						<li class="nav-links"><a href="#">Contact</a></li>
 						<li class="nav-links login"><a href="#">Login</a></li>
+						<li class="nav-links"><a href="#">Financial Planning</a></li>
+					
 					</ul>
 					<div class="menu-toggle">
 						<ion-icon class="open" name="menu-outline"></ion-icon>
@@ -188,6 +193,7 @@
 		</section>
 		<section id="main">
 			<div class="contact-container">
+				<!--
 				<div class="contact-grid">
 					<div class="contact-grid-item1">
 						<div
@@ -245,6 +251,7 @@
 							</div>
 						</div>
 					</div>
+					-->
 					<div class="contact-grid-item2">
 						<!--  -->
 						<h2 style="text-align: center; color: #2b6777">
@@ -252,6 +259,7 @@
 						</h2>
 						<div class="details-grid">
 							<div class="details-grid-item">
+								<i class="fa fa-line-chart" aria-hidden="true"></i>
 								<h3>GROW</h3>
 								<p>
 									Preserve your investments through comprehensive and
@@ -259,6 +267,8 @@
 								</p>
 							</div>
 							<div class="details-grid-item">
+								<i class="fa-regular fa-hand-holding-seedling"></i>
+								
 								<h3>MAINTAIN</h3>
 								<p>
 									Your long-term goals and objectives as the absolute
@@ -273,6 +283,7 @@
 								</p>
 							</div>
 							<div class="details-grid-item">
+								<i class="fa fa-bullseye" aria-hidden="true"></i>
 								<h3>PURSUE</h3>
 								<p>
 									The highest levels of academic degrees and
@@ -540,6 +551,7 @@
 		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 		<script src="main.js"></script>
+		
 		<script>
 			particlesJS.load('particles-js', './particles.json', function () {
 				console.log('callback - particles.js config loaded');

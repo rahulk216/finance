@@ -584,16 +584,27 @@ li, a{
 	}
 }
 
-
+.login{
+	background-color:#3f7d20;
+}
 
 @media only screen and (min-width: 1024px) {
-
+	.nav-links{
+		text-align:center;
+		
+	}
+	.nav-links a{
+		margin-left:unset;
+	}
+	.login{
+		border-radius:10px;
+	}
 	li,
 	p {
 		line-height: 1.8rem;
 	}
 	.main-landing{
-		height:100vh;
+		height:104vh;
 	}
 	
 	.landing-screen p {
@@ -657,13 +668,19 @@ li, a{
 		position: unset;
 		height: 8vh;
 		display: flex;
-		padding-top: 1rem;
+		padding-top: 0rem;
 		flex-direction: row;
 		justify-content: space-around;
 		transform: translate(0);
-		width: 75%;
+		width: 100%;
 	}
-
+	.nav-items{
+		padding-top: 1rem;
+	}
+	.login a{
+		margin-left:0px;
+		
+	}
 	.nav-links li {
 		opacity: 1;
 
