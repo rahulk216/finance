@@ -185,6 +185,12 @@
 
 
 @media only screen and (min-width: 768px) {
+    .main-about-us .socials-pc .social-container span{
+        color: var(--main-color);
+    }
+    .nav-links a{
+        color: var(--main-color);
+    }
     .firm-grid p{
         grid-column: span 2;
     }
