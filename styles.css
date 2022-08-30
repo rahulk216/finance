@@ -497,10 +497,15 @@ li, a{
 .details-grid-item{
 	padding:1rem;
 	background-color: var(--color-blue-3);
-	color: var(--color-blue-1)
+	color: black;
+	text-align: center;
 }
 .socials-pc{
 	display:none;
+}
+.logo-v{
+	height:80px;
+	margin:0 auto;
 }
 @media only screen and (min-width: 768px) {
 	.menu-toggle{
@@ -514,7 +519,7 @@ li, a{
 		align-items: center;
 	}
 	.social-container{
-		background-color: var(--color-blue-1);
+		margin-top:10px;
 		border-radius:10px 0px 0px 10px;
 	}
 	.socials-pc .social-container span{
@@ -638,7 +643,7 @@ li, a{
 		line-height: 1.8rem;
 	}
 	.main-landing{
-		height:104vh;
+		height:125vh;
 	}
 	
 	.landing-screen p {
