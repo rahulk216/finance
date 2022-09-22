@@ -78,6 +78,15 @@
  }
  .section-faces p{
    grid-column: span 3;
+   height:10rem;
+   width:10rem;
+   border: 1px solid black;
+   text-align: center;
+   border-radius: 50%;
+   padding-top:3rem;
+   background: var(--color-blue-1);
+   color:var(--color-blue-3)
+
  }
  /* .section-leadership .leadership-grid .leadership-grid-item img {
     width:201px;
@@ -85,7 +94,7 @@
 } */
 .leadership-grid {
     display:grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap:2rem;
     background-color:var(--color-blue-3);
     place-items: center;
@@ -106,7 +115,7 @@
 }
 .leadership-grid-item{
     position:relative;
-    grid-column: span 2;
+    grid-column: span 3;
 }
 /* .leadership-grid-main{
     padding-top:10px;
