@@ -65,7 +65,7 @@
 }
 
 .section-firm-two {
-    margin:4rem 0;
+    margin:6rem 0;
  }
  .section-firm-two p{
    padding-top:10px
@@ -192,6 +192,14 @@
     grid-column: span 2;
 }
 
+.frim-details-grid{
+    position:relative;
+}
+.position-fix{
+    position: absolute;
+    top: 103px;
+    left: 104px;
+}
 
 @media only screen and (min-width: 768px) {
     .main-about-us .socials-pc .social-container span{
@@ -222,4 +230,13 @@
     .section-faces p{
         grid-column: span 1;
     }
+    .frim-details-grid{
+        position:relative;
+    }
+    .position-fix{
+    position: absolute;
+    top: 114px;
+    left: 492px;
+}
+
 }
